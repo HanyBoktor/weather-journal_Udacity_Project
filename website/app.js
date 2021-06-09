@@ -47,9 +47,9 @@ async function comingData () {
         const comingData = await comingRes.json();
         console.log(comingData);
       // start present the data in frontend GUI.
-        document.getElementById('date').innerText = comingData.date;
-        document.getElementById('temp').innerText = comingData.temp + " c";
-        document.getElementById('content').innerText = comingData.content;
+        document.getElementById('date').innerHTML = comingData.date;
+        document.getElementById('temp').innerHTML = comingData.temp + " c";
+        document.getElementById('content').innerHTML = comingData.content;
         return comingData;
     } catch (error) {
       alert ("ALERT wait me!!!!! ")
